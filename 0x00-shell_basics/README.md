@@ -10,3 +10,4 @@
 10. you are asked to go back to your previous directory.
 11. you are askex to list the files in your working directory, parent of your working directory and /boot directory in long format.
 12. you are asked to determine the type of file iamafile is.
+13. you are asked to create a symbolic link.14. copy all html files from the working directory to the parent directory without repetition.
