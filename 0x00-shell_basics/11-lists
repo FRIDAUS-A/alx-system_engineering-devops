@@ -1,2 +1,2 @@
 #!/bin/bash
-ls *.txt ../*.txt /boot/*.txt -la
+ls . .. /boot -la
