@@ -3,6 +3,8 @@
 2. you are asked to change your current directory to the user home directory.
 3. you are asked to display the files and subdirectories in long format.
 4. you are asked to display the files, subdirectories and hidden files in long format.
+5. you are asked to list displsying users and group id numerically
+
 6. you are asked to create a directory my_first_directory inside /tmp/.
 7. you are asked to move betty from /tmp/ to /tmp/my_first_directory.
 8. you are asked to remove betty.
