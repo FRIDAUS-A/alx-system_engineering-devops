@@ -4,3 +4,4 @@
 3. you are asked to display the files and subdirectories in long format.
 4. you are asked to display the files, subdirectories and hidden files in long format.
 6. you are asked to create a directory my_first_directory inside /tmp/.
+7. you are asked to move betty from /tmp/ to /tmp/my_first_directory.
