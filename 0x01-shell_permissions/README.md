@@ -3,4 +3,5 @@
 2. List all the groups the current user from.
 3. Changes the owner of the file to betty.
 4. Creates an empty file.
-5. ADF EXECUTE PERMISSUON TO FILE.
+5. ADD EXECUTE PERMISSION TO FILE.
+6. ADD EXECUTE PERMISSION TO ALL.
