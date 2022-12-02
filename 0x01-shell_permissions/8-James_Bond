@@ -1,2 +1,2 @@
 #!/bin/bash
-umask 0007
+chmod o=rwx hello
