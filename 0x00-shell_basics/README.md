@@ -15,3 +15,4 @@
 13. you are asked to create a symbolic link.14. copy all html files from the working directory to the parent directory without repetition.
 15  you are asked to copy all files that starts with an uppercase to /tmp/u.
 16. Create a script that deletes all files in the current working directory that end with the character ~.
+17. Create a script that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory.
