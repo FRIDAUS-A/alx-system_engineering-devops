@@ -8,4 +8,5 @@
 7. ADD EXECUTE PERMISSION TO ALL.
 8. ADD ALL PERMISSION TO OTHERS AND NONE TO OWNER AND GROUP.
 9. SET THE MODE OF THE FILE TO -rwxr-x-wx
-10. SET THE MODE TO OLLEH'S MODE
+10. SET THE MODE TO OLLEH'S MODE.
+11. Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
