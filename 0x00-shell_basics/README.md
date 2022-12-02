@@ -13,4 +13,5 @@
 11. you are askex to list the files in your working directory, parent of your working directory and /boot directory in long format.
 12. you are asked to determine the type of file iamafile is.
 13. you are asked to create a symbolic link.14. copy all html files from the working directory to the parent directory without repetition.
-15 you are asked to copy all files that starts with an uppercase to /tmp/u
+15  you are asked to copy all files that starts with an uppercase to /tmp/u.
+16. Create a script that deletes all files in the current working directory that end with the character ~.
