@@ -10,3 +10,4 @@
 9. SET THE MODE OF THE FILE TO -rwxr-x-wx
 10. SET THE MODE TO OLLEH'S MODE.
 11. Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
+12. Create a script that creates a directory called my_dir with permissions 751 in the working directory.
