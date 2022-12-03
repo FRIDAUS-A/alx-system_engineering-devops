@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R a+x ../
+find /path/to/base/.. -type d -exec chmod a+x {} +
