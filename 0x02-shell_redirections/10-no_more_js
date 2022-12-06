@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -r --one-file-system *js
+find -name *.js | rm *.js
