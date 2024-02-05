@@ -2,11 +2,11 @@
 #Configure your domain zone so that the subdomain www points to yo##r load-balancer IP (lb-01). Let’s also add other
 #subdomains to make our life easier, and write a Bash script that will display information about subdomains.
 
-url=$(dig +short "$2.$1")
-ip_1=$(dig +short www.fridausokoya.tech)
-ip_2=$(dig +short lb-01.fridausokoya.tech)
-ip_3=$(dig +short web-01.fridausokoya.tech)
-ip_4=$(dig +short web-02.fridausokoya.tech)
+url=$(dig +short "$2.$1" | awk "NR==1")
+ip_1=$(dig +short www.fridausokoya.tech | awk "NR==1")
+ip_2=$(dig +short lb-01.fridausokoya.tech | awk "NR==1")
+ip_3=$(dig +short web-01.fridausokoya.tech | awk "NR==1")
+ip_4=$(dig +short web-02.fridausokoya.tech | awk "NR==1")
 
 check_domain () {
     if [ "$#" -eq 2 ]
