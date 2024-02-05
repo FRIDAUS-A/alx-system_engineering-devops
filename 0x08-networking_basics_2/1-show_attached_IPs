@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# show attached IPs
+
+ifconfig | grep 'inet' | sed '/inet6/d' >> file
+
+awk '{print $2}' file
+
+rm file

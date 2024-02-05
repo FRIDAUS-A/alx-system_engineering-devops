@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#a Bash script that gives you information about the school file.
+
+if [ -f school ] || [ -d school ]
+then
+       echo "school file exists"
+       if [ -f school ]
+       then
+	       content=$(cat schoo1)
+       elif [ -d school ]
+       then
+	       content=$(ls school)
+       fi
+       if [ -z "$content" ] && [ -f school ]
+       then
+	       echo "school file is empty"
+       else
+	       echo "school file is not empty"
+       fi
+       if [ -f school ]
+       then
+	       echo "school is a regular file"
+       fi
+else
+	echo "school file does not exist"
+fi
