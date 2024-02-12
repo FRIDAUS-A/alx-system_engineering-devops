@@ -1,5 +1,5 @@
 ufw enable
-ufw allow ssh 22/tcp
-ufw allow https 443/tcp
-ufw allow http 80/tcp
+ufw allow ssh/tcp
+ufw allow https/tcp
+ufw allow http/tcp
 ufw reload
