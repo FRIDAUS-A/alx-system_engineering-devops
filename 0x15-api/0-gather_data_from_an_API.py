@@ -18,4 +18,4 @@ task_done = requests.get(task, params={"user_id": Id, "completed": "true"})
 print(f"Employee {name} is done with tasks({len(task_done.json())}/\
 {len(total_task.json())}):")
 for mem in task_done.json():
-    print(f"\t{mem['title']}")
+    print(f"\t {mem['title']}")
