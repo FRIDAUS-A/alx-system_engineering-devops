@@ -25,10 +25,9 @@ if __name__ == "__main__":
         for json_data in total_task.json():
             json_data['UserId'] = username
             json_data['id'] = Id
-            if count not True:
+            if count is not True:
                 header = ['id', 'UserId', 'completed', 'title']
                 writer = csv.DictWriter(csvfile, fieldnames=header)
-                writer.writeheader()
                 count = True
             filtered_data = {key: f"'{json_data[key]}'" for key in header}
             writer.writerow(filtered_data)
