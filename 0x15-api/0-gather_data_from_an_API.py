@@ -14,8 +14,8 @@ if __name__ == "__main__":
 
     Id = response.json()["id"]
     name = response.json()["name"]
-    total_task = requests.get(task, params={"user_id": Id})
-    task_done = requests.get(task, params={"user_id": Id, "completed": "true"})
+    total_task = requests.get(task, params={"userId": Id})
+    task_done = requests.get(task, params={"userId": Id, "completed": "true"})
     print(f"Employee {name} is done with tasks({len(task_done.json())}/\
 {len(total_task.json())}):")
     for mem in task_done.json():
