@@ -26,7 +26,7 @@ if __name__ == "__main__":
             json_data['UserId'] = username
             json_data['id'] = Id
             if count not True:
-                header = ['UserId', 'id', 'completed', 'title']
+                header = ['id', 'UserId', 'completed', 'title']
                 writer = csv.DictWriter(csvfile, fieldnames=header)
                 writer.writeheader()
                 count = True
