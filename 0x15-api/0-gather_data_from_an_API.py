@@ -7,15 +7,16 @@ progress.
 
 import requests
 import sys
-url = f"https://jsonplaceholder.typicode.com/users/{sys.argv[1]}"
-task = f"https://jsonplaceholder.typicode.com/todos"
-response = requests.get(url)
+if __name__ == "__main__":
+    url = f"https://jsonplaceholder.typicode.com/users/{sys.argv[1]}"
+    task = f"https://jsonplaceholder.typicode.com/todos"
+    response = requests.get(url)
 
-Id = response.json()["id"]
-name = response.json()["name"]
-total_task = requests.get(task, params={"user_id": Id})
-task_done = requests.get(task, params={"user_id": Id, "completed": "true"})
-print(f"Employee {name} is done with tasks({len(task_done.json())}/\
+    Id = response.json()["id"]
+    name = response.json()["name"]
+    total_task = requests.get(task, params={"user_id": Id})
+    task_done = requests.get(task, params={"user_id": Id, "completed": "true"})
+    print(f"Employee {name} is done with tasks({len(task_done.json())}/\
 {len(total_task.json())}):")
-for mem in task_done.json():
-    print(f"\t {mem['title']}")
+    for mem in task_done.json():
+        print(f"\t {mem['title']}")
