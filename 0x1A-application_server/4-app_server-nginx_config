@@ -1,0 +1,10 @@
+server {
+    listen 80;
+    
+    add_header X-Served-By 222478-web-01;
+    error_page 404 /404.html;
+    server_name web-01.fridausokoya.tech 54.174.181.31 localhost 127.0.0.1;
+    location /api/ {
+        proxy_pass http://127.0.0.1:5002;
+    }
+}
