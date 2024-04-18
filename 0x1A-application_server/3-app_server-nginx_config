@@ -1,0 +1,15 @@
+server {
+    listen 80;
+
+    server_name web-01.fridausokoya.tech 54.174.181.31 127.0.0.1 localhost;
+    error_page 404 /404.html
+
+    #customize http response header
+    add_header X-Served-By 222478-web-01;
+    location = /airbnb-onepage/ {
+            proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+    }
+    location ~ /airbnb-dynamic/number_odd_or_even/(\d+)/?$ {
+            proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+    }
+}
